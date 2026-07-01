@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Bebas+Neue&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lilita+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Oxanium:wght@200..800&family=Quicksand:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    background: #0A0F1E;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background: linear-gradient(
+    135deg,
+    #0A0F1E 0%,
+    #121A2E 50%,
+    #1A2745 100%
+    );
+
+    border-bottom: 1px solid #ffffff44;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.login-header {
+    display: flex;
+    gap: 20px;
+}
+
+.login-header a {
+    color: #fff;
+    border: 1px solid #1E88FF;
+    border-radius: 20px;
+    padding: 7px;
+    transition: 0.3s ease-in-out;
+}
+
+.login-header a:hover {
+    background: #1565D8;
+}
+
+.logo-header img{
+    width: 100px;
+}
+
+.cards-promocionais {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-top: 20px;
+    scrollbar-width: none;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+}
+.cards-promocionais::-webkit-scrollbar {
+    display: none;
+}
+
+.card-promo {
+    display: flex;
+    flex-direction: column;
+    background: #121A2E;
+    color: #fff;
+    min-width: 180px;
+    width: auto;
+    flex-shrink: 0;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 10px;
+}
+.card-promo img {
+    width: 15px;
+}
+
+.odd-card-promo {
+border-top: 1px solid #fff;
+display: flex;
+align-items: flex-end;
+justify-content: center;
+margin-top: 20px;
+margin-left: -20px;
+margin-right: -20px;
+font-weight: bold;
+}
+
+.odd-card-promo a {
+    color: #fff;
+    margin-top: 10px;
+}
+.jogos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jogos h2, .titulo-promo {
+    align-self: flex-start;
+    padding-left: 15px;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 17px;
+}
+.card-jogos {
+    background: #121A2E;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 95%;
+    margin-top: 20px;
+}
+
+/* Cabeçalho */
+
+.card-jogos-header {
+    background: #0f121b;
+    padding: 8px 12px;
+
+    display: grid;
+    grid-template-columns: 1fr 150px;
+    align-items: center;
+
+    color: #777;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cabecalho-odds {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+/* Conteúdo do jogo */
+
+.jogo {
+    padding: 12px;
+
+    display: grid;
+    grid-template-columns: 1fr 150px;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Times */
+
+.times {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.times div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.times img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* Odds */
+
+.odds {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+}
+
+.odds button {
+    background: #1A2745;
+    color: #fff;
+
+    border: none;
+    border-radius: 5px;
+
+    padding: 8px 4px;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.odds button:hover {
+    background: #1E88FF;
+}
+
+/* Responsivo */
+
+@media (max-width: 480px) {
+
+    .card-jogos-header {
+        grid-template-columns: 1fr 120px;
+    }
+
+    .jogo {
+        grid-template-columns: 1fr 120px;
+    }
+
+    .times div {
+        font-size: 14px;
+    }
+
+    .odds button {
+        font-size: 12px;
+        padding: 7px 2px;
+    }
+}

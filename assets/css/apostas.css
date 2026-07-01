@@ -1,0 +1,134 @@
+.apostas {
+    color: #fff;
+}
+
+.header-apostas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.header-apostas-btn{
+    background: #121A2E;
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff;
+    transition: 0.5s ease-in;
+}
+
+.header-apostas-btn:hover {
+    background: #1E88FF;
+}
+
+.camisas-apostas {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.camisas-apostas img {
+    width: 15%;
+}
+
+.meio-camisas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    width: 100px;
+    gap: 5px;
+}
+
+.time1-apostas, .time2-apostas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.filtros-apostas ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    max-width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+
+    border-bottom: 1px solid #1E88FF;
+}
+
+.filtros-apostas::-webkit-scrollbar {
+    display: none;
+}
+
+.filtro-aposta {
+    flex: 0 0 auto;
+}
+
+.filtro-selected {
+    background: #fff;
+    color: #121A2E;
+    padding: 7px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.resultado-final {
+    background-color: #121A2E;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.linha {
+    width: 100%;
+    height: 1px;
+    background: #2B354F; /* ou #ffffff22 */
+    margin: 10px 0;
+}
+
+.resultado-final-cima span {
+    color: rgb(6, 116, 6);
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.resultado-final-baixo {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.odd-time1, .odd-empate, .odd-time2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.odd-empate {
+    border-left: 1px solid #2B354F;
+    border-right: 1px solid #2B354F;
+}
+
+.odd-time1:hover, .odd-empate:hover, .odd-time2:hover {
+    background: #1E88FF;
+    border-radius: 15px;
+}
+.odd-dupla .odd-time1{ 
+    border-right: 1px solid #2B354F;
+}
+
+
