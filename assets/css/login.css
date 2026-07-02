@@ -1,0 +1,74 @@
+header {
+    justify-content: center;
+}
+
+
+main{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login{
+    width:90%;
+    max-width:360px;
+
+    background:#121A2E;
+
+    border:1px solid #1E88FF;
+    border-radius:12px;
+
+    padding:35px 25px;
+
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.login h2{
+    color:#fff;
+    text-align:center;
+}
+
+fieldset{
+    border:2px solid #1E88FF;
+    border-radius:10px;
+    padding:8px 15px 12px;
+}
+
+legend{
+    color:#fff;
+    padding:0 8px;
+    font-size:14px;
+}
+
+input{
+    width:100%;
+    border:none;
+    outline:none;
+    background:transparent;
+
+    color:#fff;
+    font-size:15px;
+}
+
+input::placeholder{
+    color:#8b8b8b;
+}
+
+button{
+    height:42px;
+    border:none;
+    border-radius:8px;
+
+    background:#1E88FF;
+    color:#fff;
+
+    cursor:pointer;
+    font-weight:bold;
+}
+
+button:hover{
+    background:#1565D8;
+}
