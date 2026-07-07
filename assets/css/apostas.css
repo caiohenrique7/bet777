@@ -71,9 +71,10 @@
 
 .filtro-aposta {
     flex: 0 0 auto;
+    cursor: pointer;
 }
 
-.filtro-selected {
+.filtroAtivo {
     background: #fff;
     color: #121A2E;
     padding: 7px;
@@ -129,6 +130,23 @@
 }
 .odd-dupla .odd-time1{ 
     border-right: 1px solid #2B354F;
+}
+
+.float-aposta {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 10px;
+    left: 0px;
+    width: 100%;
+    align-items: center;
+}
+
+.float-aposta h3 {
+    color: rgb(16, 85, 16);
 }
 
 
