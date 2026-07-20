@@ -132,8 +132,8 @@
     border-right: 1px solid #2B354F;
 }
 
-.float-aposta {
-    display: flex;
+.floatAposta {
+    display: none;
     justify-content: space-between;
     background: #fff;
     padding: 10px;
@@ -145,7 +145,7 @@
     align-items: center;
 }
 
-.float-aposta h3 {
+.floatAposta h3 {
     color: rgb(16, 85, 16);
 }
 

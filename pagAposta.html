@@ -65,17 +65,17 @@
 
             <div class="filtros-apostas">
                 <ul>
-                    <li class="filtro-aposta" id="filtroAposta">Popular</li>
-                    <li class="filtro-aposta" id="filtroAposta">Criar Aposta</li>
-                    <li class="filtro-aposta" id="filtroAposta">Gols</li>
-                    <li class="filtro-aposta" id="filtroAposta">Cartões</li>
-                    <li class="filtro-aposta" id="filtroAposta">Escanteios</li>
+                    <li class="filtro-aposta" id="filtroAposta" data-filtro="todos">Todos</li>
+                    <li class="filtro-aposta" id="filtroAposta" data-filtro="aposta">Criar Aposta</li>
+                    <li class="filtro-aposta" id="filtroAposta" data-filtro="gols">Gols</li>
+                    <li class="filtro-aposta" id="filtroAposta" data-filtro="cartoes">Cartões</li>
+                    <li class="filtro-aposta" id="filtroAposta" data-filtro="escanteios">Escanteios</li>
                 </ul>
             </div>
 
             <div class="opcoes-apostas">
                 <!--inicio-->
-                <div class="resultado-final">
+                <div class="resultado-final" data-categoria="todos">
                     
                     <div class="resultado-final-cima">
                         <h4>RESULTADO FINAL</h4>
@@ -85,23 +85,23 @@
                     <div class="linha"></div>
 
                     <div class="resultado-final-baixo">
-                        <div class="odd-time1">
-                            <span>Brasil</span>
-                            <span>1.57</span>
+                        <div class="opc-aposta odd-time1">
+                            <span class="nomeTime">Brasil</span>
+                            <span class="oddTime">1.57</span>
                         </div>
-                        <div class="odd-empate">
+                        <div class="opc-aposta odd-empate">
                             <span>Empate</span>
-                            <span>7.75</span>
+                            <span class="oddEmpate">7.75</span>
                         </div>
-                        <div class="odd-time2">
-                            <span>Haiti</span>
-                            <span>21.00</span>
+                        <div class="opc-aposta odd-time2">
+                            <span class="nomeTime">Haiti</span>
+                            <span class="oddTime">21.00</span>
                         </div>
                     </div>
                 </div>
                 <!--fim-->
                 <!--inicio-->
-                <div class="resultado-final">
+                <div class="resultado-final" data-categoria="todos">
                     
                     <div class="resultado-final-cima">
                         <h4>PARA SE QUALIFICAR</h4>
@@ -110,34 +110,78 @@
                     <div class="linha"></div>
 
                     <div class="resultado-final-baixo odd-dupla">
-                        <div class="odd-time1">
-                            <span>Brasil</span>
-                            <span>1.38</span>
+                        <div class="opc-aposta odd-time1">
+                            <span class="nomeTime">Brasil</span>
+                            <span class="oddTime">1.38</span>
                         </div>
-                        <div class="odd-time2">
-                            <span>Haiti</span>
-                            <span>17.89</span>
+                        <div class="opc-aposta odd-time2">
+                            <span class="nomeTime">Haiti</span>
+                            <span class="oddTime">17.89</span>
                         </div>
                     </div>
                 </div>
                 <!--fim-->
+
                 <!--inicio-->
                 <div class="resultado-final">
                     
-                    <div class="resultado-final-cima">
+                    <div class="resultado-final-cima" data-categoria="todos">
                         <h4>PONTAPÉ INICIAL</h4>
                     </div>
 
                     <div class="linha"></div>
 
                     <div class="resultado-final-baixo odd-dupla">
-                        <div class="odd-time1">
-                            <span>Brasil</span>
-                            <span>1.79</span>
+                        <div class="opc-aposta odd-time1">
+                            <span class="nomeTime">Brasil</span>
+                            <span class="oddTime">1.79</span>
                         </div>
-                        <div class="odd-time2">
-                            <span>Haiti</span>
-                            <span>2.20</span>
+                        <div class="opc-aposta odd-time2">
+                            <span class="nomeTime">Haiti</span>
+                            <span class="oddTime">2.20</span>
+                        </div>
+                    </div>
+                </div>
+                <!--fim-->
+
+                <!--inicio-->
+                <div class="resultado-final" data-categoria="cartoes">
+                    
+                    <div class="resultado-final-cima">
+                        <h4>CARTÕES</h4>
+                    </div>
+
+                    <div class="linha"></div>
+
+                    <div class="resultado-final-baixo odd-dupla">
+                        <div class="opc-aposta odd-time1">
+                            <span class="nomeTime">Mais de 1.5</span>
+                            <span class="oddTime">1.31</span>
+                        </div>
+                        <div class="opc-aposta odd-time2">
+                            <span class="nomeTime">Menos de 1.5</span>
+                            <span class="oddTime">3.40</span>
+                        </div>
+                    </div>
+                </div>
+                <!--fim-->
+                <!--inicio-->
+                <div class="resultado-final" data-categoria="escanteios">
+                    
+                    <div class="resultado-final-cima">
+                        <h4>ESCANTEIOS</h4>
+                    </div>
+
+                    <div class="linha"></div>
+
+                    <div class="resultado-final-baixo odd-dupla">
+                        <div class="opc-aposta odd-time1">
+                            <span class="nomeTime">Mais de 5.5</span>
+                            <span class="oddTime">1.53</span>
+                        </div>
+                        <div class="opc-aposta odd-time2">
+                            <span class="nomeTime">Menos de 5.5</span>
+                            <span class="oddTime">3.70</span>
                         </div>
                     </div>
                 </div>
@@ -146,22 +190,20 @@
             </div>
         </section>
 
-        <section class="float-aposta">
+        <section class="floatAposta">
             <div class="texts-float-aposta">
             <h3>Criar Aposta</h3>
 
-            <span>
-                Resultado Final,
-                 Chutes no gol
-            </span>
+            <span id="escolhasFloat"></span>
 
             </div>
 
-            <strong>2.89</strong>
+            <strong id="oddFloat">2.89</strong>
 
         </section>
        
     </main>    
     
     <script src="./assets/js/filtros-aposta.js"></script>
+    <script src="./assets/js/floatMenu.js"></script>
 </body>
