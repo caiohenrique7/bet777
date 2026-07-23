@@ -1,0 +1,27 @@
+.apostas {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.criar-aposta {
+    background: #fff;
+    width: 90%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.times-jogo {
+    display: flex;
+    gap: 30px;
+    margin: 10px 0;
+}
+
+.selecao h4 {
+    color: green;
+}
+
+.selecao p {
+    font-weight: 700;
+    color: #555;
+}

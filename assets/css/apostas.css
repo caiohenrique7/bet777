@@ -149,4 +149,60 @@
     color: rgb(16, 85, 16);
 }
 
+#verAposta {
+    color: green;
+    font-weight: 700;
+    
+}
 
+
+/*Criar aposta*/
+
+.apostass {
+    display: none;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.criar-aposta {
+    background: #fff;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    position: fixed;
+    bottom: 10px;
+    left: 0px;
+    
+}
+
+.times-jogo {
+    display: flex;
+    gap: 30px;
+    margin: 10px 0;
+}
+
+.selecoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.selecao h4 {
+    color: green;
+}
+
+.selecao p {
+    font-weight: 700;
+    color: #555;
+}
+
+.seta-aposta-fechar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#oddCriar {
+    font-weight: 700;
+}

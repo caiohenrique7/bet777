@@ -47,7 +47,7 @@
 
                 <div class="time1-apostas">
                 <img src="./assets/img/cam brasil.png" alt="brasil">
-                <span>BRASIL</span>
+                <span id="time1">BRASIL</span>
                 </div>
 
                 <div class="meio-camisas">
@@ -58,7 +58,7 @@
 
                 <div class="time2-apostas">
                 <img src="./assets/img/cam haiti.png" alt="haiti">
-                <span>HAITI</span>
+                <span id="time2">HAITI</span>
                 </div>
 
             </div>
@@ -78,7 +78,7 @@
                 <div class="resultado-final" data-categoria="todos">
                     
                     <div class="resultado-final-cima">
-                        <h4>RESULTADO FINAL</h4>
+                        <h4 class="nomeMercado">RESULTADO FINAL</h4>
                         <span>PAGAMENTO ANTECIPADO</span>
                     </div>
 
@@ -104,7 +104,7 @@
                 <div class="resultado-final" data-categoria="todos">
                     
                     <div class="resultado-final-cima">
-                        <h4>PARA SE QUALIFICAR</h4>
+                        <h4 class="nomeMercado">PARA SE QUALIFICAR</h4>
                     </div>
 
                     <div class="linha"></div>
@@ -123,10 +123,10 @@
                 <!--fim-->
 
                 <!--inicio-->
-                <div class="resultado-final">
+                <div class="resultado-final"  data-categoria="todos">
                     
-                    <div class="resultado-final-cima" data-categoria="todos">
-                        <h4>PONTAPÉ INICIAL</h4>
+                    <div class="resultado-final-cima">
+                        <h4 class="nomeMercado">PONTAPÉ INICIAL</h4>
                     </div>
 
                     <div class="linha"></div>
@@ -148,7 +148,7 @@
                 <div class="resultado-final" data-categoria="cartoes">
                     
                     <div class="resultado-final-cima">
-                        <h4>CARTÕES</h4>
+                        <h4 class="nomeMercado">CARTÕES</h4>
                     </div>
 
                     <div class="linha"></div>
@@ -169,7 +169,7 @@
                 <div class="resultado-final" data-categoria="escanteios">
                     
                     <div class="resultado-final-cima">
-                        <h4>ESCANTEIOS</h4>
+                        <h4 class="nomeMercado">ESCANTEIOS</h4>
                     </div>
 
                     <div class="linha"></div>
@@ -197,13 +197,33 @@
             <span id="escolhasFloat"></span>
 
             </div>
+            <span id="verAposta">Ver Aposta</span>
 
-            <strong id="oddFloat">2.89</strong>
+            <strong id="oddFloat"></strong>
 
+        </section>
+
+        <section class="apostass">
+
+    <div class="criar-aposta">
+        <h3>Criar Aposta</h3>
+        <div class="times-jogo">
+            <h5 id="jogoCriarAposta"></h5>
+            <span id="oddCriar"></span>
+            <input type="number" placeholder="aposta">
+        </div>
+        <div class="selecoes">
+
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-down seta-aposta-fechar" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+        </svg>
         </section>
        
     </main>    
     
     <script src="./assets/js/filtros-aposta.js"></script>
     <script src="./assets/js/floatMenu.js"></script>
+    <script src="./assets/js/criarAposta.js"></script>
 </body>
